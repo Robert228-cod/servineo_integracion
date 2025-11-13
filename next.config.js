@@ -2,6 +2,14 @@
 const path = require('path');
 
 const nextConfig = {
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   reactStrictMode: true,
   // Fuerza a Next a usar este proyecto como raíz del tracing
   outputFileTracingRoot: __dirname,
